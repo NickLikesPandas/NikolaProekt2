@@ -3,21 +3,33 @@ import ImageAdd from "@/components/imageadd";
 
 const ImageAddPage: React.FC = () => {
   return (
-    <div>
-      <a href="/dashboard" style={styles.link}>← Back to Dashboard</a> 
+    <div style={styles.page}>
+      <a href="/dashboard" style={styles.link}>
+        ← Back to Dashboard
+      </a>
+
       <ImageAdd />
     </div>
   );
 };
 
 const styles = {
+  page: {
+    width: "100vw",
+    height: "100vh",
+    margin: 0,
+    padding: 0,
+    overflow: "hidden",
+  },
   link: {
-    display: 'inline-block',
-    marginBottom: '20px',
-    color: '#007bff',
-    textDecoration: 'none',
-    fontSize: '16px',
-    fontWeight: 'bold',
+    position: "absolute" as const,
+    top: 20,
+    left: 20,
+    zIndex: 10,
+    color: "#007bff",
+    textDecoration: "none",
+    fontSize: "16px",
+    fontWeight: "bold",
   },
 };
 

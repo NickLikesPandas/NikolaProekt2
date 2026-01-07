@@ -170,9 +170,7 @@ export default function Dashboard() {
 
           <p style={styles.panelText}>
             This area can show recent uploads,
-            edits, or analytics. The dashboard
-            stays clean, modern, and focused —
-            no unnecessary controls.
+            edits, or analytics.
           </p>
         </div>
       </div>
